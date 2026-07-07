@@ -1,0 +1,291 @@
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tapachula-Chiapas</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#EDF8F2,#ABDEC2,#68C492);
+    color:white;
+}
+
+/* MENÚ SUPERIOR */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(44,110,73,0.95);
+    backdrop-filter:blur(10px);
+    padding:15px;
+}
+
+nav ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ABDEC2;
+}
+
+/* CONTENIDO */
+
+.container{
+    padding:30px;
+}
+
+/* TÍTULO */
+
+header{
+    margin-bottom:40px;
+}
+
+header h1{
+    width:fit-content;
+    margin:auto;
+    overflow:hidden;
+    white-space:nowrap;
+    border-right:4px solid white;
+    animation:
+    escribir 4s steps(25,end),
+    cursor .8s infinite;
+}
+
+@keyframes escribir{
+    from{width:0}
+    to{width:100%}
+}
+
+@keyframes cursor{
+    50%{
+        border-color:transparent;
+    }
+}
+
+header h2{
+    margin-top:10px;
+    animation:aparecer 2s ease;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* TARJETAS */
+
+.noticias{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.card{
+    background:#FFFCF7;
+    color:#333;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:transform .25s ease, box-shadow .25s ease;
+    animation:entrada .6s ease;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 18px rgba(0,0,0,.18);
+}
+  
+@keyframes entrada{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.card h2{
+    color:#2c6e49;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.7;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+}
+  
+  header video{
+    margin-top:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    max-width:100%;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#intro">Introducción</a></li>
+        <li><a href="#economia">Economía</a></li>
+        <li><a href="#indigena">Población indígena</a></li>
+        <li><a href="#inundaciones">Inundaciones</a></li>
+        <li><a href="#consecuencias">Consecuencias</a></li>
+        <li><a href="#recursos">Recursos naturales</a></li>
+        <li><a href="#retos">Retos futuros</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+<header>
+    <center><h1>Tapachula-Chiapas</h1></center>
+    <center><h2>Entre la riqueza natural y los desafíos sociales</h2></center>
+
+    <center>
+        <video width="700" controls>
+            <source src="" type="mapitas 2.mp4">
+            Tu navegador no soporta videos.
+        </video>
+    </center>
+</header>
+
+<section class="noticias">
+
+<div class="card" id="intro">
+    <h2>Chiapas: entre la riqueza natural y los desafíos sociales</h2>
+    <p>
+        Chiapas es uno de los estados más diversos de México por su riqueza cultural, natural e histórica.
+        Ubicado al sureste del país, cuenta con una importante población indígena, extensas áreas naturales
+        y una economía basada en la agricultura, el turismo y la generación de energía. Sin embargo,
+        detrás de sus atractivos turísticos y recursos naturales existen importantes problemáticas sociales
+        que afectan a miles de habitantes, especialmente en las zonas rurales y comunidades más vulnerables.
+    </p>
+   <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaIvU-9LC47l_JpKvz3QMTu4sC60HhGU4rRAmUaWCk_7SAJUg6ziRlKS0&s=10" alt="tapachula"
+                with: 100px;></center>
+</div>
+
+<div class="card" id="economia">
+    <h2>Economía y desigualdad social</h2>
+    <p>
+        La economía chiapaneca depende principalmente de la agricultura, la minería, la producción de café,
+        cacao, plátano y maíz, además del turismo. A pesar de la abundancia de recursos naturales,
+        una gran parte de la población vive en condiciones de pobreza. La falta de oportunidades laborales,
+        inversión e infraestructura ha provocado desigualdades económicas que afectan principalmente
+        a las comunidades rurales e indígenas.
+       <center><img src="https://revistafortuna.com.mx/wp-content/uploads/2022/12/dinero-monedas-crece-alza-economia.jpg" alt="tapachula"
+                with: 100px;></center>
+    </p>
+</div>
+
+<div class="card" id="indigena">
+    <h2>Población indígena y exclusión</h2>
+    <p>
+        Chiapas alberga una de las mayores poblaciones indígenas de México, heredera de importantes culturas mayas.
+        Aunque estas comunidades conservan tradiciones, lenguas y costumbres que enriquecen la identidad del estado,
+        muchas enfrentan dificultades para acceder a servicios de salud, educación y desarrollo económico.
+        Estas condiciones han generado históricamente demandas de mayor igualdad y justicia social.
+       <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2yqtc9lNLS9CsD2kGXPIb3tnlG3-ucsNhAPEZErU5DUySERhx3QqCPQC_&s=10" alt="tapachula"
+                with: 100px;></center>
+    </p>
+</div>
+
+<div class="card" id="inundaciones">
+    <h2>Inundaciones: una problemática ambiental y social</h2>
+    <p>
+        Las inundaciones representan uno de los problemas más graves en varias regiones del estado,
+        especialmente en Tapachula. Durante la temporada de lluvias, el aumento del nivel de los ríos
+        y los escurrimientos provenientes de la Sierra Madre de Chiapas ponen en riesgo a numerosas colonias.
+        Las fuertes precipitaciones pueden provocar desbordamientos que afectan viviendas, calles y servicios básicos.
+       <center><img src="https://chiapas.quadratin.com.mx/www/wp-content/uploads/2025/10/WhatsApp-Image-2025-10-22-at-3.26.55-PM-1160x700.jpeg" alt="tapachula"></center> 
+    </p>
+</div>
+
+<div class="card" id="consecuencias">
+    <h2>Consecuencias para la población</h2>
+    <p>
+        Las inundaciones tienen un impacto directo en la vida de las personas. Muchas familias sufren daños
+        en sus hogares, pérdidas económicas y afectaciones en sus actividades diarias. Además, los cultivos
+        pueden resultar destruidos, se interrumpen las comunicaciones y, en algunos casos,
+        es necesario evacuar comunidades enteras para proteger la seguridad de los habitantes.
+       <center><img src="https://elorbe.com//archivos_data/2024/09/INUNDACIONES-02.jpg" alt="tapachula"
+                with: 100px;></center>
+    </p>
+</div>
+
+<div class="card" id="recursos">
+    <h2>Recursos naturales y conservación</h2>
+    <p>
+        Chiapas posee una enorme riqueza ambiental. La Selva Lacandona, el Cañón del Sumidero y otras áreas
+        naturales albergan una gran diversidad de especies de flora y fauna. Sin embargo, la conservación
+        de estos ecosistemas enfrenta desafíos relacionados con el crecimiento urbano, las actividades humanas
+        y los efectos de fenómenos naturales que amenazan el equilibrio ambiental de la región.
+    </p>
+   <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS921eZmn-qDbU-axRf2SKtkaxS6lA1v1_W0ljDZ-yB3u69l5UGnUW8Bw&s=10" alt="tapachula"></center> 
+</div>
+
+<div class="card" id="retos">
+    <h2>Retos pendientes para el futuro de Chiapas</h2>
+    <p>
+        A pesar de su riqueza cultural, natural y económica, Chiapas continúa enfrentando importantes desafíos sociales.
+        La pobreza, la desigualdad, la vulnerabilidad de muchas comunidades y los riesgos provocados por fenómenos naturales
+        muestran la necesidad de fortalecer la infraestructura, mejorar los servicios públicos y promover un desarrollo
+        más equitativo. Atender estos problemas permitirá aprovechar mejor los recursos del estado y mejorar la calidad de vida
+        de sus habitantes.
+       <center><img src="https://imparcialoaxaca.mx/wp-content/uploads/2023/08/DE-ACUERDO-2.jpg" alt="tapachula"
+                with:100
+                px;></center>
+    </p>
+</div>
+
+</section>
+
+</div>
+
+<footer>
+    © 2026 | Tapachula, Chiapas, Karina Servin Diaz, Romina Reynaga Ramírez, Ana Sofia González Galindo y Valentina Spear Badilla
+</footer>
+
+</body>
+</html>
